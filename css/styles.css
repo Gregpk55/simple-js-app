@@ -1,12 +1,25 @@
 
-
+:root{
+    --primary-font: 'Oswald';
+    }
+    /*color*/
+    :root {
+      --primary-color: white;
+      --secondary-color: #e0b354;
+      --dark-grey: #2b2b2b;
+      --lightgray: #D3D3D3;
+      --visited: #0e2d4b;
+      --active: #3b94e7;
+    }
+    
 
 body {
     font-family: 'Oswald' sans-serif;
     font-weight: 400;
     font-size: 25px;
     line-height: 1.6;
-    background-color:lightcyan;
+    background-color:red;
+   
 }
 
 h1 {
@@ -23,3 +36,12 @@ h1 {
     font-size: 18px;
     font-weight: 700;
   }
+  /*image border*/
+
+  .poke_border {
+    max-height: 20%;
+    display:flex;
+    margin-top: -20px;
+    margin-left: -20px;
+   
+}
