@@ -39,8 +39,12 @@ h1 {
   /*image border*/
 
   .poke_border {
-    max-height: 20%;
-    display:flex;
+    display: flex;
+    align-items: self-start;
     margin-top: -20px;
     margin-left: -20px;
-   }
+  }
+  
+  .poke_border > img {
+    width: 100%;
+  }
