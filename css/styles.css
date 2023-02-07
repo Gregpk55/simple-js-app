@@ -1,50 +1,46 @@
-
-:root{
-    --primary-font: 'Oswald';
-    }
-    /*color*/
-    :root {
-      --primary-color: white;
-      --secondary-color: #e0b354;
-      --dark-grey: #2b2b2b;
-      --lightgray: #D3D3D3;
-      --visited: #0e2d4b;
-      --active: #3b94e7;
-    }
-    
+:root {
+  --primary-font: "Oswald";
+}
+/*color*/
+:root {
+  --primary-color: white;
+  --secondary-color: #e0b354;
+  --dark-grey: #2b2b2b;
+  --lightgray: #d3d3d3;
+  --visited: #0e2d4b;
+  --active: #3b94e7;
+}
 
 body {
-    font-family:var(--primary-font) sans-serif;
-    font-weight: 400;
-    font-size: 25px;
-    background-color:red;
-    
-   
+  font-family: var(--primary-font) sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  background-color: red;
 }
 
 h1 {
-    font-size: 30px;
-    font-weight: 700;
-  }
-  
-  h2 {
-    font-size: 24px;
-    font-weight: 700;
-  }
-  
-  h3 {
-    font-size: 18px;
-    font-weight: 700;
-  }
-  /*image border*/
+  font-size: 30px;
+  font-weight: 700;
+}
 
-  .poke_border {
-    display: flex;
-    align-items: self-start;
-    margin-top: -20px;
-    margin-left: -20px;
-  }
-  
-  .poke_border > img {
-    width: 100%;
-  }
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+/*image border*/
+
+.poke_border {
+  display: flex;
+  align-items: self-start;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.poke_border > img {
+  width: 100%;
+}
