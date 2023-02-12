@@ -53,7 +53,7 @@ button, .button-class {
     background-color: var(--primary-color);
     color: black;
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
     border-radius: 3px;
     border-bottom: 2px solid black;
     transition-duration: 0.2s;
