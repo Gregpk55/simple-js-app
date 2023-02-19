@@ -146,3 +146,34 @@ pokemonRepository.loadList().then(function () {
     pokemonRepository.addListItem(pokemon);
   });
 });
+/*function showModal(pokemon) {
+  let modalBody = $(.modal-Body");
+  let modalTitle = $(".modal-title");
+  let modalHeader = $(".modal-header");
+
+  modalTitle.empty();
+  modalBody.empty();
+  */ 
+
+/* //name for modal content
+    let nameElement = $("<h1>" + pokemon.name + "</h1>");
+    //img in modal
+    let imageElementFront = $('<img class="modal-img" style = "width:50%">');
+    imageElementFront.attr("src",item.imageUrlFront);
+    let imageElementBack = $('img class="modal-img" style=width:50%">');
+    imageElementBack.attr("src", item.imageElementBack);
+    //elemt height in modal
+    let heightElement = $("<p>" + "height : " + pokemon.height + "</p>");
+    //elment weight
+    let weightElement = $("<p>" + "weight : " + pokemon.weight + "</p>");
+    //elemt type
+    let typeElement = $("<p>" + "type : " + pokemon.type + "</p>");
+  } 
+
+   /* modalTitle.append(pokemon.nameElement);
+    modalBody.append(pokemon.imageElementFront);
+    modalBody.append(pokemon.imageElementBack);
+    modalBody.append(pokemon.heightElement);
+    modalBody.append(pokemon.weightElement);
+    modalBody.append(pokemon.typeElement);
+    modalBody.append(contentElement);*/
