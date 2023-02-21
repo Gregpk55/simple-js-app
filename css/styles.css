@@ -3,7 +3,7 @@
 }
 /*color*/
 :root {
-  --primary-color: white;
+  --primary-color: rgb(232, 228, 228);
   --secondary-color: #e0b354;
   --dark-grey: #2b2b2b;
   --lightgray: #d3d3d3;
@@ -72,5 +72,7 @@ button, .button-class {
       }
       
       
-      
+container, .container-class{
+  padding: 50px;
+}      
       
