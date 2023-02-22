@@ -22,54 +22,66 @@
       </div>
     </header>
     <!--search bar-->
-<nav class="navbar navbar-light fixed-top">
-  <div class="conatiner"></div>
-  <span class="navbar-brand mb-0"></span>
-  <form class="form-inline">
-    <input
-      class="form-control mr-sm-2 "
-      type="search"
-      placeholder="Search"
-      aria-label="Search"
-    />
-    <button class="btn btn-warning my-2 my-sm-0" type="button">
-      Search
-    </button>
-  </form>
-</nav>
+    <nav class="navbar navbar-light fixed-top">
+      <div class="conatiner"></div>
+      <span class="navbar-brand mb-0"></span>
+      <form class="form-inline">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-warning my-2 my-sm-0" type="button">
+          Search
+        </button>
+      </form>
+    </nav>
 
     <main><h1>Pokedex</h1></main>
-    <ul class="list-group pokemon-list"></ul>
+
+    <div class="container">
+      
+        <ul class="pokemon-list"></ul>
+      </div>
     
 
-   <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
+    
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title" id="exampleModalLabel"></h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body"><!--img/details-->
-        
-       <img src="pokemon.imageUrl">
-      
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="exampleModalLabel"></h1>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body"><!--img/details--></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-    
 
     <strong>
       <script src="js/promise-polyfill.js"></script>
@@ -89,8 +101,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"
       ></script>
-  
+
       <script src="js/scripts.js"></script>
     </strong>
   </body>
-  </html>
+</html>
