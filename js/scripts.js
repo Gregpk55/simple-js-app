@@ -1,6 +1,8 @@
 let pokemonRepository = (function () {
   let pokemonList = [];
   let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
+
+  
   
   function add(pokemon) {
     if (
@@ -88,16 +90,17 @@ let pokemonRepository = (function () {
     modalTitle.innerText = pokemon.name;
   
     let modalBody = document.querySelector(".modal-body");
-    modalBody.innerText = ("Height : " + pokemon.height 
-    + "Type : " + pokemon.myImage);
-    
+    modalBody.innerText = ("Height : " + pokemon.height);
+
+    modalBody = document.querySelector("modal-body");
+    modalBody.innerText("type : " + pokemon.types);
   
     modalTitle.empty();
     modalBody.empty();
 
-    modalBody.append(pokemon.details)
+    modalBody.append(pokemon.name);
 
-    
+    modalBody.append(pokemon.types);
     
     
     //img
