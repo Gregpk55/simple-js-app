@@ -1,30 +1,14 @@
-:root {
-  --primary-font: "Oswald";
-}
-/*color*/
-:root {
-  --primary-color: rgb(232, 228, 228);
-  --secondary-color: #e0b354;
-  --dark-grey: #2b2b2b;
-  --lightgray: #d3d3d3;
-  --visited: #0e2d4b;
-  --active: #3b94e7;
-}
-
-body {
-  
-  font-family: var(--primary-font) sans-serif;
+.body {
+  font-family: sans-serif;
   font-weight: 400;
   font-size: 25px;
   background-color: red;
- 
 }
 
 main {
-text-align: center;
-
+  text-align: center;
 }
-.modal-title{
+.modal-title {
   text-decoration: underline;
 }
 h1 {
@@ -42,8 +26,6 @@ h3 {
   font-weight: 700;
 }
 
-
-
 /*image border*/
 
 .poke_border {
@@ -57,47 +39,43 @@ h3 {
   width: 100%;
 }
 
-button, .button-class {
-    overflow:hidden;
-    border: none;
-    display: inline-block;
-    font-family: inherit;
-    /* styles the background color, font, */
-    background-color: var(--primary-color);
-    color: black;
-    text-decoration: none;
-    padding: 20px;
-    width: 100%;
-    border-radius: 20px;
-    border-bottom: 2px solid black;
-    transition-duration: 0.2s;
-    transition-property: opacity;
-   
-  }
-  /*search Button*/
-  .btn-warning.my-2.my-sm-0{
-    width:min-content;
+button,
+.button-class {
+  overflow: hidden;
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  /* styles the background color, font, */
+  background-color: whitesmoke;
+  color: black;
+  text-decoration: none;
+  padding: 20px;
+  width: 100%;
+  border-radius: 20px;
+  border-bottom: 2px solid black;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+/*search Button*/
+.btn-warning.my-2.my-sm-0 {
+  width: min-content;
+}
+.close {
+  width: min-content;
+  margin-top: auto;
+  margin-right: 100%;
+}
 
-  }
-  .close{
-    width:min-content;
-    margin-top:auto  ;
-    margin-right: 100%;
-  }
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
 
-
-  
-
-  button:hover,
-      button:focus,
-      .button:hover,
-      .button:focus {
-        cursor: pointer;
-        opacity: 0.8;
-      }
-      
-.modal-body{
-  background-color: var(--primary-color);
+.modal-body {
+  background-color: lightgray;
 }
 /*pokemon List*/
 ul {
@@ -105,11 +83,8 @@ ul {
   align-self: center;
   margin: 0;
   padding: 0;
- 
- 
+
   column-count: 4;
   column-gap: 20px;
   row-gap: 10px;
-  
 }
-
