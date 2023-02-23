@@ -79,6 +79,11 @@ button, .button-class {
     width:min-content;
 
   }
+  .close{
+    width:min-content;
+    margin-top:auto  ;
+    margin-right: 100%;
+  }
 
 
   
