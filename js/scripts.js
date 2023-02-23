@@ -97,11 +97,7 @@ let pokemonRepository = (function () {
         console.error(e);
       });
   }
-  function showDetails(pokemon) {
-    pokemonRepository.loadDetails(item).then(function () {
-      console.log(item);
-    });
-  }
+  
 
   //modal
   function showModal(pokemon) {
