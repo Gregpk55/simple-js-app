@@ -7,6 +7,9 @@
         "eslint:recommended"
     ],
     "rules": {
-        "quotes": ["error", "single"]
+        "quotes": ["error", "single"],
+        "prefer-const": "warn"
     }
+
+
 }
