@@ -12,13 +12,22 @@ let pokemonRepository = (function () {
   });
 
   let searchBar = $(".form-control");
-  searchBar.on("keypress", function () {
+  searchBar.on("keypress keyup", function (event) {
     let pokemonList = $(".pokemon-list");
     pokemonList.empty();
-    getByName($(".form-control").val()).forEach(function (pokemon) {
-      addListItem(pokemon);
-    });
+    if (event.keyCode === 8 || event.keyCode === 46) {
+      // backspace or delete key was pressed
+      getByName($(".form-control").val()).forEach(function (pokemon) {
+        addListItem(pokemon);
+      });
+    } else {
+      // any other key was pressed
+      getByName($(".form-control").val()).forEach(function (pokemon) {
+        addListItem(pokemon);
+      });
+    }
   });
+
   function getByName(search) {
     return pokemonList.filter(function (pokemon) {
       return pokemon.name.toLowerCase().includes(search.toLowerCase());
@@ -97,7 +106,6 @@ let pokemonRepository = (function () {
         console.error(e);
       });
   }
-  
 
   //modal
   function showModal(pokemon) {
