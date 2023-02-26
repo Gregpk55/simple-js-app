@@ -1,22 +1,32 @@
-/* Body */
+:root {
+  --primary-font: "Oswald";
+}
+/*color*/
+:root {
+  --primary-color: rgb(232, 228, 228);
+  --secondary-color: #e0b354;
+  --dark-grey: #2b2b2b;
+  --lightgray: #d3d3d3;
+  --visited: #0e2d4b;
+  --active: #3b94e7;
+}
+
 body {
-  font-family: sans-serif;
+  
+  font-family: var(--primary-font) sans-serif;
   font-weight: 400;
   font-size: 25px;
   background-color: red;
+ 
 }
 
-/* Main */
 main {
-  text-align: center;
-}
+text-align: center;
 
-/* Modal Title */
-.modal-title {
+}
+.modal-title{
   text-decoration: underline;
 }
-
-/* Headings */
 h1 {
   font-size: 60px;
   font-weight: 700;
@@ -32,64 +42,73 @@ h3 {
   font-weight: 700;
 }
 
-/* Image Border */
+
+
+/*image border*/
+
 .poke_border {
   display: flex;
   align-items: self-start;
-  margin: -20px 0 0 -20px;
+  margin-top: -20px;
+  margin-left: -20px;
 }
 
 .poke_border > img {
   width: 100%;
 }
 
-/* Buttons */
-button,
-.button-class {
-  overflow: hidden;
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  background-color: whitesmoke;
-  color: black;
-  text-decoration: none;
-  padding: 20px;
-  width: 100%;
-  border-radius: 20px;
-  border-bottom: 2px solid black;
-  transition: opacity 0.2s;
-}
+button, .button-class {
+    overflow:hidden;
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+    /* styles the background color, font, */
+    background-color: var(--primary-color);
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    border-bottom: 2px solid black;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+   
+  }
+  /*search Button*/
+  .btn-warning.my-2.my-sm-0{
+    width:min-content;
 
-/* Search Button */
-.btn-warning.my-2.my-sm-0 {
-  width: min-content;
-}
+  }
+  .close{
+    width:min-content;
+    margin-top:auto  ;
+    margin-right: 100%;
+  }
 
-.close {
-  width: min-content;
-  margin: auto 0 auto auto;
-}
 
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-  cursor: pointer;
-  opacity: 0.8;
-}
+  
 
-/* Modal Body */
-.modal-body {
-  background-color: lightgray;
+  button:hover,
+      button:focus,
+      .button:hover,
+      .button:focus {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+      
+.modal-body{
+  background-color: var(--primary-color);
 }
-
-/* Pokemon List */
+/*pokemon List*/
 ul {
-  list-style: none;
+  list-style-type: none;
   align-self: center;
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding-top: 10px;
+ 
+ 
   column-count: 4;
   column-gap: 20px;
   row-gap: 10px;
+  
 }
