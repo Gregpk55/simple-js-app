@@ -8,7 +8,8 @@
     ],
     "rules": {
         "quotes": ["error", "single"],
-        "prefer-const": "warn"
+        "prefer-const": [ "warn"],
+        "perfer-arrow-callback":["warn"]
     }
 
 
