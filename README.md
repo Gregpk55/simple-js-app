@@ -8,6 +8,20 @@ This app is built with HTML, CSS, and JavaScript. It fetches data from an extern
 - **View a List of Items**: Users can see a list of various Pokemon.
 - **View Item Details**: On user interaction, such as clicking a Pokemon, more detailed information about that Pokemon is displayed.
 
+## Skills/Languages Used
+
+- JavaScript
+- HTML/CSS 
+- jQuery
+- Bootstrap
+- External Api
+
+
+## Example Screenshot
+
+<img src="img/RM.png" alt="pokedex Screenshot" width="300">
+
+
 **Note**: The Pokedex border was crafted using Inkscape.
 
 ## Links
